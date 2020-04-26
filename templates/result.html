@@ -1,0 +1,96 @@
+{% extends "bootstrap/base.html" %}
+{% block content %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+<body>
+
+<style>
+      #pred {
+  position: absolute;
+  top: 220px;
+  left: 500px;
+}
+
+ body{
+ background-image: linear-gradient(to right, red,orange,green,blue,indigo,violet)
+ }
+
+ #header_index_1{
+    background-color:#125b54;
+    }
+
+#input{
+color: #ccf5ff;
+}
+
+#pred h5{color:#ff4d94;font-size: 20px;}
+
+#pred p{color:#ccf5ff}
+</style>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="jumbotron" id="header_index_1">
+				<h2
+					style="color:#dea9e6">Income Prediction Form
+				</h2>
+				<p
+					style="color:#ab7fb2;text-transform: uppercase;">ML Model
+				</p>
+
+			</div>
+
+<div id="input">
+                <h2
+                    style="color:#dea9e6;font-size: 20px;">Imported data:
+				</h2>
+            <p>Age : {{ age }}</p>
+            <p>working_class : {{ w_class }}</p>
+            <p>education: {{ education}} </p>
+            <p>martial_status: {{ martial_status}}</p>
+            <p>relation: {{ relation}}</p>
+            <p>race: {{ race}}</p>
+            <p>gender: {{ gender}}</p>
+            <p>capital_gain: {{ capital_gain}}</p>
+            <p>capital_loss: {{ capital_loss}}</p>
+            <p>hours_per_week: {{ hours_per_week}}</p>
+            <p>native_country: {{ native_country}}</p>
+</div>
+        </div>
+
+        <div class="col s12 m4 offers" id="pred">
+                <h5> Prediction  output : </h5>
+                  <div class="collection" role="alert">
+                      <p> Model_used<span style="color: #ffff00"> [ {{ model_selected }} ] </span>
+                          on Imported data </p>
+                      <p  class="collection-item active purple">
+                          <span style="color:#ff9900" >Predicted result ::</span>{{ prediction }}  {{ result_prediction }}
+                      </p>
+
+                    <p> 1 : Income more than 50k </p>
+                    <p> 0 : Income less than 50k</p>
+                  </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+{% endblock %}
