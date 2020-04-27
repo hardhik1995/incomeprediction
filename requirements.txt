@@ -1,15 +1,15 @@
-flask
+flask==1.1.2
 Flask-Material==0.1.1
 joblib==0.14.1
 matplotlib==3.1.3
 nltk==3.4.5
-numpy==1.18.1
+numpy==1.18.3
 pandas==1.0.1
 requests==2.22.0
 scikit-learn==0.22.1
 scipy==1.4.1
 seaborn==0.10.0
-sklearn
-flask_bootstrap
+sklearn==0.22.1
+flask_bootstrap==3.3.7.0
 
 
