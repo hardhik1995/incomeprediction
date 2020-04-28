@@ -9,7 +9,6 @@ requests==2.22.0
 scikit-learn==0.22.1
 scipy==1.4.1
 seaborn==0.10.0
-sklearn==0.22.1
 flask_bootstrap==3.3.7.0
 
 
